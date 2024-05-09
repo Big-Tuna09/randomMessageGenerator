@@ -26,13 +26,25 @@ const firstPart = () => {
 
 const secondPart = () => {
 const easyOrHardarr = ['relaxed', 'easy', 'good', 'hard', 'all out'];
-const howHard = easyOrHardarr[Math.floor(Math.random()*Runarr.length)]
+const howHard = easyOrHardarr[Math.floor(Math.random()*easyOrHardarr.length)]
+
+if (howHard === 'relaxed') {
+    return 'Run relaxed, this is time to recover while you run.'
+} else if (howHard === 'easy') {
+    return 'Run easy, this is your everyday run pace. Just out for a jog.'
+} else if (howHard === 'good') {
+    return 'Run at a good pace. Keep up a little bit of pace for a tempo-like run.'
+} else if ( howHard === 'hard') {
+    return 'Run at a hard pace. keep up that heart rate for this speed run, this will be at race pace.'
+} else if (howHard === 'all out') {
+    return 'Run all out and try not to die'
+}
 }
 
 //last part run advice.
 
 const thirdPart = () => {
-
+    return 'third part'
 }
 
 //testing.
