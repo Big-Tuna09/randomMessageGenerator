@@ -44,20 +44,33 @@ if (howHard === 'relaxed') {
 //last part run advice.
 
 const thirdPart = () => {
-    return 'third part'
+    const adviceArr =[1,2,3,4]
+    const adviceNum = adviceArr[Math.floor(Math.random()*adviceArr.length)]
+
+    if (adviceNum === 1) {
+        return 'Rest is particularly important when running. Your runs are getting tough but so are you.'
+    } else if (adviceNum === 2) {
+        return "If the weather's bad it's ok to change up your schedule. If you still go out make sure to dress properly for the weather. Wicking clothes and proper jackets can save your health."
+    } else if (adviceNum === 3) {
+        return 'Be flexible';
+    } else if (adviceNum === 4) {
+        return "Dress for the weather. Be a little cold when you first go out. You'll warm up a good deal and could get overheated in the middle of the run"
+    }
 }
 
 //testing.
-
+/*
 console.log(firstPart());
 console.log(secondPart());
 console.log(thirdPart());
+*/
 
 //put it all together
 
 
-/*
+
 const randomMsg = () => {
-    const first = 
+    return firstPart() + ' ' + secondPart() + ' ' + thirdPart();
 }
-*/
+
+console.log(randomMsg());
